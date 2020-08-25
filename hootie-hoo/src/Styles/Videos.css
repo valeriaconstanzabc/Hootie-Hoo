@@ -1,0 +1,43 @@
+.containerVideos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 0px 0px 12px 12px;
+    width: 85%;
+    padding: 20px 0px 60px 0px;
+
+}
+.tittleContent{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+      .carousel {
+        height: 500px;
+        width: 90%;
+        background: #EEE;
+      }
+      .carousel-cell {
+          display: flex;
+        width: 66%;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+      .carousel-cell:before {
+        display: block;
+        text-align: center;
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+      }
