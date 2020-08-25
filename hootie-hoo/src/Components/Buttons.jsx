@@ -1,10 +1,10 @@
 import React from 'react'
 import '../Styles/Buttons.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Buttons = () => {
     return (
-        <Router>
+      
         <div className="containerButtons">
             <div className="containerBtns">
                 <div className="containerAllBtn">
@@ -20,7 +20,7 @@ const Buttons = () => {
                     </button></Link>
                 </div>
                 <div className="containerAllBtn">
-                <Link to="/covid"> <button className="btnCovid">
+                <Link to="/covid"><button className="btnCovid">
                         <h4 className="tittleBtn">Covid</h4>
                         <img className="iconBtn" src="https://i.ibb.co/HhYyrNV/covid.png" alt="Botón covid"/>
                     </button></Link>
@@ -39,7 +39,7 @@ const Buttons = () => {
                 </div>
             </div>
         </div>
-       </Router>
+       
     )
 }
 
