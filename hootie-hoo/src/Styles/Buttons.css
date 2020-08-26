@@ -43,6 +43,16 @@
         .link{
             text-decoration:none;
         }
+        .link:hover{
+            text-decoration:none;
+        }
+        .btnGames:focus,
+        .btnVideos:focus,
+        .btnCovid:focus,
+        .btnCare:focus,
+        .btnGuides:focus{
+            outline:none;
+        }
         .btnGames{
             background: #8BBEF3;
         }
