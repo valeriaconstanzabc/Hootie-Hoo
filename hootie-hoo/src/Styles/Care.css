@@ -1,0 +1,59 @@
+.careContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contentCareContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: red;/*rgba(255, 255, 255, 0.78);*/
+    border-radius: 0px 0px 12px 12px;
+    width: 85%;
+    padding: 20px 0px 60px 0px;
+}
+
+.tittleContent {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.carouselCare {
+    height: 500px;
+    width: 90%;
+    background: #EEE;
+    
+}
+
+.carousel-cell-care{
+    width: 66%;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+        
+}
+
+/* .carousel-cell-care:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+ */
+/* cell number */
+/* .carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  } */
