@@ -9,7 +9,7 @@ const Videos = () => {
                 <div>
                     <h1 className="tittleContent">Videos</h1>
                 </div>
-                <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div className="carousel" data-flickity='{ "wrapAround": true }'>
                     <div className="carousel-cell" >
                         <ReactPlayer width={900} height={500} url="https://www.youtube.com/watch?v=9skA9MFlcs4" controls={true} />
                     </div>

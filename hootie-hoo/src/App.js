@@ -12,7 +12,7 @@ import Welcome from './Components/Welcome';
 import Games from './Components/Games';
 import Videos from './Components/Videos';
 import Covid from './Components/Covid';
-import Care from './Components/Videos';
+import Care from './Components/Care';
 import Guides from './Components/Guides';
 
 const App = () => {
