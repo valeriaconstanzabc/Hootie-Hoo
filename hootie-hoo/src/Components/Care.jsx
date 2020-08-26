@@ -1,16 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-const Care = props => {
+const Care = () => {
     return (
         <div>
             <h1>Contenido de Cuidados</h1>
         </div>
     )
-}
-
-Care.propTypes = {
-
 }
 
 export default Care

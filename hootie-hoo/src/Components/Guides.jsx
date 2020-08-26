@@ -1,16 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-const Guides = props => {
+const Guides = () => {
     return (
         <div>
             <h1>Contenido de Gu'ias</h1>
         </div>
     )
-}
-
-Guides.propTypes = {
-
 }
 
 export default Guides

@@ -39,6 +39,7 @@ const Videos = () => {
                 <div>
                     <h1 className="tittleContent">Videos</h1>
                 </div>
+
                 <Splide
                 options={ {
                     focus    : 'center',
@@ -61,6 +62,7 @@ const Videos = () => {
                         </div>
                     </SplideSlide>
                 </Splide>
+
             </div>
 		</div>
 	);

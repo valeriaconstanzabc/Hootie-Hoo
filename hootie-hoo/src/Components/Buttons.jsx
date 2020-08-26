@@ -3,7 +3,7 @@ import '../Styles/Buttons.css';
 import { Link } from "react-router-dom";
 
 const Buttons = () => {
-    return (
+    return (      
         <div className="containerButtons">
             <div className="containerBtns">
                 <div className="containerAllBtn">
