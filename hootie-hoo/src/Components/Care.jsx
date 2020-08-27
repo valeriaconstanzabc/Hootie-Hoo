@@ -35,7 +35,7 @@ const Care = () => {
 				>   
                 <SplideSlide>
                     <div className="carousel-img-care">
-                       <a href={Thoughts}><img width={350} height={500} src={Thoughts} alt=""/></a>;
+                       <a href={Thoughts}><img width={350} height={500} src={Thoughts} alt=""/></a>
                     </div>
                 </SplideSlide>
 
@@ -53,7 +53,7 @@ const Care = () => {
 
                  <SplideSlide>                    
                     <div className="carousel-img-care">
-                       <a href={Together}><img width={350} height={500}  src={Together} alt=""/></a>;                         
+                       <a href={Together}><img width={350} height={500}  src={Together} alt=""/></a>                         
                     </div>             
                 </SplideSlide> 
 
