@@ -4,88 +4,140 @@
     justify-content: center;
     margin-top: 50px;
 }
-    .containerBtns{
+    .containerColor{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         background: rgba(255, 255, 255, 0.78);
         border-radius: 12px 12px 0px 0px;
         width: 85%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px;
     }
-    .containerAllBtn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 150px;
-        overflow:hidden;
-        border-radius: 20px;
-    }
-        .btnGames,
-        .btnVideos,
-        .btnCovid,
-        .btnCare,
-        .btnGuides{
+        .containerContentBtn1{
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 190px;
-            height: 140px;
-            border-radius: 20px;
-            border: 0;
-            outline: none;
-            cursor: pointer;
+            -webkit-flex: 0 1 auto;
+            padding-left: 30px;
         }
-        .link{
-            text-decoration:none;
+        .containerContentBtn2-3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            -webkit-flex: 2 1 auto;
+
         }
-        .link:hover{
-            text-decoration:none;
-        }
-        .btnGames:focus,
-        .btnVideos:focus,
-        .btnCovid:focus,
-        .btnCare:focus,
-        .btnGuides:focus{
-            outline:none;
-        }
-        .btnGames{
-            background: #8BBEF3;
-        }
-        .containerAllBtn:hover .btnGames,
-        .containerAllBtn:hover .btnVideos,
-        .containerAllBtn:hover .btnCovid,
-        .containerAllBtn:hover .btnCare,
-        .containerAllBtn:hover .btnGuides{
-            transform:scale(1.2);
-        }
-        .btnVideos{
-            background: #FDD422;
-        }
-        .btnCovid{
-            background: #FA6164;
-        }
-        .btnCare{
-            background: #C73967;
-        }
-        .btnGuides{
-            background: #2C4096;
-        }
+            .containerContentBtn2{
+                display: flex;
+                justify-content: space-around;
+                align-content: center;
+                align-items: center;
+                -webkit-flex: 0 1 auto;
+                width: 100%;
+            }
+            .containerContentBtn3{
+                display: flex;
+                justify-content: space-around;
+                align-content: center;
+                align-items: center;
+                -webkit-flex: 0 1 auto;
+                width: 100%;
+            }
+            .divHover, .divHover1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 150px;
+                overflow:hidden;
+                border-radius: 20px;
+            }
+
+            .btnGames,
+            .btnVideos,
+            .btnCovid,
+            .btnCare,
+            .btnGuides{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 190px;
+                height: 140px;
+                border-radius: 20px;
+                border: 0;
+                outline: none;
+                cursor: pointer;
+            }
+            .btnGames{
+                background: #8BBEF3;
+            }
+            .btnVideos{
+                background: #FDD422;
+            }
+            .btnCovid{
+                background: #FA6164;
+            }
+            .btnCare{
+                background: #C73967;
+            }
+            .btnGuides{
+                background: #2C4096;
+            }
+
+            .divHover1:hover .btnGames,
+            .divHover:hover .btnVideos,
+            .divHover:hover .btnCovid,
+            .divHover:hover .btnCare,
+            .divHover:hover .btnGuides{
+                transform:scale(1.2);
+            }
+
+            .iconBtn{
+                width: 80px;
+            }
+            .link{
+                text-decoration:none;
+            }
+            .link:hover{
+                text-decoration:none;
+            }
+            .btnGames:focus,
+            .btnVideos:focus,
+            .btnCovid:focus,
+            .btnCare:focus,
+            .btnGuides:focus{
+                outline:none;
+            }
             .tittleBtn{
                 font-family: 'Open Sans';
                 font-style: normal;
                 font-weight: bold;
-                font-size: 24px;
+                font-size: 23px;
                 line-height: 33px;
                 text-align: center;
                 margin: 0;
                 
                 color: #FFFFFF;
             }
-            .iconBtn{
-width: 80px;
-            }
+
+/* <-----------MEDIA QUERY-----------> */
+@media all and (max-width: 1247px){
+    .containerColor{ flex-wrap: wrap; }
+    .containerContentBtn1{ padding-left: 0px; }
+}
+@media all and (max-width: 970px){
+    .containerContentBtn2-3{ flex-wrap: wrap; }
+}
+@media all and (max-width: 500px){
+    .btnVideos, .btnCovid, .btnCare, .btnGuides{ width: 150px; }
+    .divHover{ width: 150px; }
+    .iconBtn{ width: 70px; }
+    .containerContentBtn2{ justify-content: space-between; }
+    .containerContentBtn3{ justify-content: space-between; }
+}
+@media all and (max-width: 410px){
+    .btnVideos, .btnCovid, .btnCare, .btnGuides{ width: 105px; }
+    .divHover{ width: 110px; }
+}
