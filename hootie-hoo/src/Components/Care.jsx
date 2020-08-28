@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+//import PropTypes from 'prop-types'
 import '../Styles/Care.css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Thoughts from '../Assets/infografia-pensamientos3.JPG';
