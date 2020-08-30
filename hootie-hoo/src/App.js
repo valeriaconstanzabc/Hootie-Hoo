@@ -16,6 +16,7 @@ import Care from './Components/Care';
 import Guides from './Components/Guides';
 import ButtonsChildren from './Components/ButtonsChildren';
 import ButtonsParents from './Components/ButtonsParents';
+import Main from './Components/Game/Main';
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
           <Route path="/games">
             <ButtonsChildren />
             <Games />
+            <Main />
           </Route>
 
           <Route path="/videos">
