@@ -64,7 +64,9 @@
                 height: 234px;
                 transform: rotate(20deg);
             }
-
+            .align-content-center {
+                padding-left: 200px;
+            }
 
 @media all and (max-width: 1190px){
     .covidContainer{
