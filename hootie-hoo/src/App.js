@@ -47,7 +47,7 @@ const App = () => {
             <ButtonsChildren />
             <Covid />
           </Route>
-
+          
           <Route path="/covidParents">
             <ButtonsParents />
             <Covid />
