@@ -55,7 +55,26 @@
   .navbar {
     display: flex;
     box-shadow: 4px 4px 6px gray;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    background: rgba(139, 190, 243, 0.8);
+    border: 5px solid #8BBEF3;
+    box-sizing: border-box;
+  }
+
+  .detractor-title, .detractor-score {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .medal-score {
+    width: 25px;
   }
 
   .containerInfoGame{
@@ -74,7 +93,8 @@
     flex-wrap: wrap;
     height: 450px;
     width: 570px;
-    box-shadow: 4px 4px 10px gray;
+    /*box-shadow: 2px 2px 2px gray;*/
+    margin-left: 40px ;
   }
   
   .image {
