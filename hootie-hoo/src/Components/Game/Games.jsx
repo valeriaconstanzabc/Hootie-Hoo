@@ -80,13 +80,9 @@ const Games = ({ Audio3, Audio4 }) => {
                                          
                                         <h3 className='col text-center'>Juguemos</h3>
                                 </div>
-<<<<<<< HEAD:hootie-hoo/src/Components/Games.jsx
-                                    <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames"/>
-=======
                                    <Link to= "/games/memoryGame">
                                    <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames" alt="Buho hootie hoo"/>
                                    </Link> 
->>>>>>> 0418b33ce6f839155fa2a628ea3037266a791bcd:hootie-hoo/src/Components/Game/Games.jsx
                                 </div>
                             </div>
                                 <div className="col">
