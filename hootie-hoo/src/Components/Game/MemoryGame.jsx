@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Styles/MemoryGame.css';
+import '../../Styles/MemoryGame.css';
 
 const MemoryGame = () => {
     return (

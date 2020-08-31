@@ -9,14 +9,14 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Buttons from './Components/Buttons';
 import Welcome from './Components/Welcome';
-import Games from './Components/Games';
+import Games from './Components/Game/Games';
 import Videos from './Components/Videos';
 import Covid from './Components/Covid';
 import Care from './Components/Care';
 import Guides from './Components/Guides';
 import ButtonsChildren from './Components/ButtonsChildren';
 import ButtonsParents from './Components/ButtonsParents';
-import MemoryGame from './Components/MemoryGame';
+import MemoryGame from './Components/Game/MemoryGame';
 
 const App = () => {
   return (

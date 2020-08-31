@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import '../Styles/Games.css';
+import '../../Styles/Games.css';
 import React, { useState, useEffect } from "react";
-import Audio3 from '../Audios/3.mp3'
-import Audio4 from '../Audios/4.mp3'
+import Audio3 from '../../Audios/3.mp3'
+import Audio4 from '../../Audios/4.mp3'
 
 const useAudio3 = () => {
     const [audio] = useState(new Audio(Audio3));
