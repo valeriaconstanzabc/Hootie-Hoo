@@ -1,72 +1,72 @@
-import Luffy from "./Luffy.png";
-import Sanji from "./Sanji.png";
-import Usopp from "./Usopp.png";
-import Zorro from "./zorro.png";
-import Nami from "./Nami.png";
-import Brooks from "./brooks.png";
-import onePiece from "./onepiece.png";
+import pumaEspuma from "./pumaEspuma.png";
+import jabierJabon from "./jabierJabon.png";
+import toMask from "./toMask.png";
+import guantini from "./guantini.png";
+import hootieHoo from "./hootieHoo.png";
+import niñaHootieHoo from "./niñaHootieHoo.png";
+import carta from "./1.png";
 
 export let images = [
   {
-    name: "Luffy",
-    pic: Luffy,
+    name: "PumaEspuma",
+    pic: pumaEspuma,
     flipped: false,
   },
   {
-    name: "Sanji",
-    pic: Sanji,
+    name: "JabierJabon",
+    pic: jabierJabon,
     flipped: false,
   },
   {
-    name: "Usopp",
-    pic: Usopp,
+    name: "ToMask",
+    pic: toMask,
     flipped: false,
   },
   {
-    name: "Zorro",
-    pic: Zorro,
+    name: "Guantini",
+    pic: guantini,
     flipped: false,
   },
   {
-    name: "Nami",
-    pic: Nami,
+    name: "HootieHoo",
+    pic: hootieHoo,
     flipped: false,
   },
   {
-    name: "Brooks",
-    pic: Brooks,
+    name: "NiñaHootieHoo",
+    pic: niñaHootieHoo,
     flipped: false,
   },
   {
-    name: "Luffy",
-    pic: Luffy,
+    name: "PumaEspuma",
+    pic: pumaEspuma,
     flipped: false,
   },
   {
-    name: "Sanji",
-    pic: Sanji,
+    name: "JabierJabon",
+    pic: jabierJabon,
     flipped: false,
   },
   {
-    name: "Usopp",
-    pic: Usopp,
+    name: "ToMask",
+    pic: toMask,
     flipped: false,
   },
   {
-    name: "Zorro",
-    pic: Zorro,
+    name: "Guantini",
+    pic: guantini,
     flipped: false,
   },
   {
-    name: "Nami",
-    pic: Nami,
+    name: "HootieHoo",
+    pic: hootieHoo,
     flipped: false,
   },
   {
-    name: "Brooks",
-    pic: Brooks,
+    name: "NiñaHootieHoo",
+    pic: niñaHootieHoo,
     flipped: false,
   },
 ];
 
-export const blankCard = onePiece;
+export const blankCard = carta;
