@@ -37,7 +37,7 @@ const Care = () => {
                 hasAutoplayProgress
 				>   
                 <SplideSlide>
-                    <img width={350} height={500}  src={Thoughts} onClick={() => setlgThoughts(true)}/>
+                    <img width={350} height={500} alt="Cuida tus pensamientos" src={Thoughts} onClick={() => setlgThoughts(true)}/>
                     <Modal
                         size="lg"
                         show={lgThoughts}
@@ -50,13 +50,13 @@ const Care = () => {
                         </Modal.Title>
                         </Modal.Header>
                         <Modal.Body className='rounded mx-auto d-block'>
-                            <img width={450} height={600} src={Thoughts}/>
+                            <img width={450} height={600} alt="Cuida tus pensamientos" src={Thoughts}/>
                         </Modal.Body>
                     </Modal>
                 </SplideSlide>
 
                 <SplideSlide>
-                    <img width={350} height={500}  src={Handwashing} onClick={() => setlgHandwashing(true)}/>
+                    <img width={350} height={500} alt="Lavado de manos" src={Handwashing} onClick={() => setlgHandwashing(true)}/>
                     <Modal
                         size="lg"
                         show={lgHandwashing}
@@ -69,13 +69,13 @@ const Care = () => {
                         </Modal.Title>
                         </Modal.Header>
                         <Modal.Body className='rounded mx-auto d-block'>
-                            <img width={450} height={600} src={Handwashing}/>
+                            <img width={450} height={600} alt="Lavado de manos" src={Handwashing}/>
                         </Modal.Body>
                     </Modal>
                 </SplideSlide>
 
                 <SplideSlide>
-                    <img width={350} height={500}  src={whereWashHands} onClick={() => setlgwhereWashHands(true)}/>
+                    <img width={350} height={500} alt="Cuando lavar las manos" src={whereWashHands} onClick={() => setlgwhereWashHands(true)}/>
                     <Modal
                         size="lg"
                         show={lgwhereWashHands}
@@ -88,13 +88,13 @@ const Care = () => {
                         </Modal.Title>
                         </Modal.Header>
                         <Modal.Body className='rounded mx-auto d-block'>
-                            <img width={450} height={600} src={whereWashHands}/>
+                            <img width={450} height={600} alt="Cuando lavar las manos" src={whereWashHands}/>
                         </Modal.Body>
                     </Modal>  
                </SplideSlide> 
 
                  <SplideSlide>                      
-                    <img width={350} height={500}  src={Together} onClick={() => setlgTogether(true)}/>
+                    <img width={350} height={500}  src={Together} alt="Todos juntos contra el virus" onClick={() => setlgTogether(true)}/>
                     <Modal
                         size="lg"
                         show={lgTogether}
@@ -107,13 +107,13 @@ const Care = () => {
                         </Modal.Title>
                         </Modal.Header>
                         <Modal.Body className='rounded mx-auto d-block'>
-                            <img width={450} height={600} src={Together}/>
+                            <img width={450} height={600} alt="Todos juntos contra el virus" src={Together}/>
                         </Modal.Body>
                     </Modal>           
                 </SplideSlide>  
 
                 <SplideSlide>
-                    <img width={350} height={500}  src={Symptoms} onClick={() => setlgSymptoms(true)}/>
+                    <img width={350} height={500} alt="Síntomas del COVID" src={Symptoms} onClick={() => setlgSymptoms(true)}/>
                     <Modal
                         size="lg"
                         show={lgSymptoms}
@@ -126,7 +126,7 @@ const Care = () => {
                         </Modal.Title>
                         </Modal.Header>
                         <Modal.Body className='rounded mx-auto d-block'>
-                            <img width={450} height={600} src={Symptoms}/>
+                            <img width={450} height={600} alt="Síntomas del COVID" src={Symptoms}/>
                         </Modal.Body>
                     </Modal>
                 </SplideSlide> 

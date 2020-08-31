@@ -11,7 +11,7 @@ const useAudio = () => {
     useEffect(() => {
         playing ? audio.play() : audio.pause();
       },
-      [playing]
+      [playing, audio]
     )
   
     useEffect(() => {
@@ -19,7 +19,7 @@ const useAudio = () => {
       return () => {
         audio.removeEventListener('ended', () => setPlaying(false));
       };
-    }, [])
+    }, [audio])
   
     return [playing, toggle];
 }

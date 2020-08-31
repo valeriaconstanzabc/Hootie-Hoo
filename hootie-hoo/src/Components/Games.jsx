@@ -12,7 +12,7 @@ const useAudio3 = () => {
     useEffect(() => {
         playing ? audio.play() : audio.pause();
       },
-      [playing]
+      [playing, audio]
     )
   
     useEffect(() => {
@@ -20,7 +20,7 @@ const useAudio3 = () => {
       return () => {
         audio.removeEventListener('ended', () => setPlaying(false));
       };
-    }, [])
+    }, [audio])
   
     return [playing, toggle1];
 }
@@ -34,7 +34,7 @@ const useAudio4 = () => {
     useEffect(() => {
         playingg ? audio.play() : audio.pause();
       },
-      [playingg]
+      [playingg, audio]
     )
   
     useEffect(() => {
@@ -42,7 +42,7 @@ const useAudio4 = () => {
       return () => {
         audio.removeEventListener('ended', () => setPlayingg(false));
       };
-    }, [])
+    }, [audio])
   
     return [playingg, toggle2];
 }
@@ -79,7 +79,7 @@ const Games = ({ Audio3, Audio4 }) => {
                                          
                                         <h3 className='col text-center'>Juguemos</h3>
                                 </div>
-                                    <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames" alt="Buho hootie hoo"/>
+                                    <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames"/>
                                 </div>
                             </div>
                                 <div className="col">
