@@ -13,7 +13,7 @@ const useAudio3 = () => {
     useEffect(() => {
         playing ? audio.play() : audio.pause();
       },
-      [playing]
+      [playing, audio]
     )
   
     useEffect(() => {
@@ -21,7 +21,7 @@ const useAudio3 = () => {
       return () => {
         audio.removeEventListener('ended', () => setPlaying(false));
       };
-    }, [])
+    }, [audio])
   
     return [playing, toggle1];
 }
@@ -35,7 +35,7 @@ const useAudio4 = () => {
     useEffect(() => {
         playingg ? audio.play() : audio.pause();
       },
-      [playingg]
+      [playingg, audio]
     )
   
     useEffect(() => {
@@ -43,7 +43,7 @@ const useAudio4 = () => {
       return () => {
         audio.removeEventListener('ended', () => setPlayingg(false));
       };
-    }, [])
+    }, [audio])
   
     return [playingg, toggle2];
 }
@@ -61,7 +61,10 @@ const Games = ({ Audio3, Audio4 }) => {
                             <div className="containerImgGamesRed">
                                 <div className="hoverBtnAudioWelcome">
                                     <button onClick={toggle1} className="btnAudio">
+                                    {playing ?
+                                        <img className="imgAudio" src="https://i.ibb.co/F3dRg0X/Group-10-copiaa.png" alt="Audio"/> : 
                                         <img className="imgAudio" src="https://i.ibb.co/gPX08Lp/Group-10.png" alt="Audio"/>
+                                    }
                                     </button>
                                 </div>
                                 <p className="text text-justify">
@@ -81,7 +84,7 @@ const Games = ({ Audio3, Audio4 }) => {
                                         <h3 className='col text-center'>Juguemos</h3>
                                 </div>
                                    <Link to= "/games/memoryGame">
-                                   <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames" alt="Buho hootie hoo"/>
+                                   <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames"/>
                                    </Link> 
                                 </div>
                             </div>
@@ -89,7 +92,10 @@ const Games = ({ Audio3, Audio4 }) => {
                                     <div className="containerImgGames">
                                         <div className="hoverBtnAudioWelcome">
                                             <button onClick={toggle2} className="btnAudio">
+                                            {playingg ?
+                                                <img className="imgAudio" src="https://i.ibb.co/F3dRg0X/Group-10-copiaa.png" alt="Audio"/> : 
                                                 <img className="imgAudio" src="https://i.ibb.co/gPX08Lp/Group-10.png" alt="Audio"/>
+                                            }
                                             </button>
                                         </div>
                                         <p className="text text-justify">
