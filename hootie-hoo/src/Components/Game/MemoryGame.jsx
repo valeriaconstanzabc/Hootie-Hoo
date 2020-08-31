@@ -10,6 +10,7 @@ class MemoryGame extends React.Component {
     showEndGame: false,
     name: "",
     score: 0,
+    
   };
 
   handleLogin = (name, boolean) => {
