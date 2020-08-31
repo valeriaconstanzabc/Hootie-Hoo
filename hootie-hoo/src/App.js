@@ -17,7 +17,6 @@ import Guides from './Components/Guides';
 import ButtonsChildren from './Components/ButtonsChildren';
 import ButtonsParents from './Components/ButtonsParents';
 import MemoryGame from './Components/Game/MemoryGame';
-import Main from './Components/Game/Main';
 
 const App = () => {
   return (
@@ -64,8 +63,7 @@ const App = () => {
           </Route>
           <Route path="/games/memoryGame">
             <ButtonsChildren />
-            <Main />
-            {/* <MemoryGame /> */}
+            <MemoryGame />
           </Route>
 
         </Switch>
