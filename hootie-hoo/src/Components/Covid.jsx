@@ -43,7 +43,10 @@ const Covid = () => {
                                     <div className='row '>
                                         <div className="hoverBtnAudioWelcome">
                                             <button onClick={toggle} className="btnAudio">
-                                                <img className="imgAudio" src="https://i.ibb.co/gPX08Lp/Group-10.png" alt="Audio"/>
+                                                {playing ?
+                                                    <img className="imgAudio" src="https://i.ibb.co/F3dRg0X/Group-10-copiaa.png" alt="Audio"/> : 
+                                                    <img className="imgAudio" src="https://i.ibb.co/gPX08Lp/Group-10.png" alt="Audio"/>
+                                                }
                                             </button> 
                                         </div>
                                         <h3 className='col align-content-center'>Covid</h3>
