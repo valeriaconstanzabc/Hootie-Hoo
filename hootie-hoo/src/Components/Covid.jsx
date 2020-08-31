@@ -1,6 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import '../Styles/Covid.css';
+import Audio2 from '../Audios/2.mp3'
+
+const useAudio = () => {
+    const [audio] = useState(new Audio(Audio2));
+    const [playing, setPlaying] = useState(false);
+  
+    const toggle = () => setPlaying(!playing);
+  
+    useEffect(() => {
+        playing ? audio.play() : audio.pause();
+      },
+      [playing]
+    )
+  
+    useEffect(() => {
+      audio.addEventListener('ended', () => setPlaying(false));
+      return () => {
+        audio.removeEventListener('ended', () => setPlaying(false));
+      };
+    }, [])
+  
+    return [playing, toggle];
+}
+
 const Covid = () => {
+    const [playing, toggle] = useAudio(Audio2);
+
     return (
         <div className="containerCovid">
             <div className="covidContainer">
@@ -15,9 +41,11 @@ const Covid = () => {
                             <div className="col-7">
                                 <div className="containerText">
                                     <div className='row '>
-                                        <button className="col btnAudioCovid">
-                                            <img className="imgAudio" src="https://i.ibb.co/c19pngs/Group-3.png" alt="Audio"/>
-                                        </button> 
+                                        <div className="hoverBtnAudioWelcome">
+                                            <button onClick={toggle} className="btnAudio">
+                                                <img className="imgAudio" src="https://i.ibb.co/gPX08Lp/Group-10.png" alt="Audio"/>
+                                            </button> 
+                                        </div>
                                         <h3 className='col align-content-center'>Covid</h3>
                                     </div>
                                     <p className="text text-justify">
