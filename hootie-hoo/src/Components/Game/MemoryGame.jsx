@@ -39,7 +39,10 @@ class MemoryGame extends React.Component {
                 <div className="detractor-container"> <p className="detractor-title">Vidas</p> 
                 </div>
                 <div className="detractor-container"> <p className="detractor-title">Medallas</p> 
-                <p className="detractor-score">{score} {score !== 0 ? <img src="https://i.ibb.co/bHZ3mHY/dddd.png" alt="Medal" className="medal-score"/> : null}</p>
+                <p className="detractor-score">
+                {score === 1 ? <img src="https://i.ibb.co/bHZ3mHY/dddd.png" alt="Medal" className="medal-score"/> : null}
+                {score === 2 ? <img src="https://i.ibb.co/fYTh8Hm/Group-11.png" alt="Medal" className="medal2-score"/> : null}
+                </p>
                 </div>
               </div>
 

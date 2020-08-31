@@ -76,6 +76,9 @@
   .medal-score {
     width: 25px;
   }
+  .medal2-score {
+    width: 60px;
+  }
 
   .containerInfoGame{
       display: flex;
