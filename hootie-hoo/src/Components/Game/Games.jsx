@@ -82,6 +82,7 @@ const Games = ({ Audio3, Audio4 }) => {
                                     <div className='row '>
                                          
                                         <h3 className='col text-center'>Juguemos</h3>
+                                       
                                 </div>
                                    <Link to= "/games/memoryGame">
                                    <img className="imgCenterGames" src="https://i.ibb.co/FnqY3PG/imgGames.png" alt="imgGames"/>

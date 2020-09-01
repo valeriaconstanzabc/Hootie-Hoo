@@ -10,7 +10,7 @@ class MemoryGame extends React.Component {
     showEndGame: false,
     name: "",
     score: 0,
-  };
+    };
 
   handleLogin = (name, boolean) => {
     this.setState({ name: name, showLogin: boolean });
@@ -19,14 +19,12 @@ class MemoryGame extends React.Component {
   handleEndGame = (boolean) => {
     if (boolean) {
       this.setState({ showEndGame: boolean, score: this.state.score + 1 });
-    } else {
-      this.setState({ showEndGame: boolean });
-    }
+    } 
   };
 
   
   render() {
-    const { score, showEndGame } = this.state;
+    const { score, showEndGame, lives } = this.state;
     return (
 
       <div className="containerMemoryGames">
