@@ -39,6 +39,18 @@ class Images extends React.Component {
         this.characters = [];
       }
     }
+
+    if (this.vidas === 0) {
+      alert('GAME OVER');
+      let reset = document.getElementsByClassName("image");
+      for (let i = 0; i < reset.length; i++) {
+        reset[i].classList.add("image-blank");
+        reset[i].setAttribute("check", "false");
+        this.characters = [];
+        this.vidas = 5;
+      }
+
+    }
   };
 
   checkName = (character1, character2) => {
@@ -48,10 +60,7 @@ class Images extends React.Component {
       return true;
     }else {
       this.vidas = this.vidas -1;
-      if (this.vidas === 0){
-          alert('GAME OVER');
      
-      }
     console.log(`Te quedan ${this.vidas} Vidas`);
     }
     
@@ -62,13 +71,12 @@ class Images extends React.Component {
     if (target.getAttribute("check") === "true") {
       target.setAttribute("check", "false");
       target.classList.add("image-blank");
-    } 
-    
-     else {
+    } else {
       target.setAttribute("check", "true");
       target.classList.remove("image-blank");
     }
   };
+
   render() {
     return (
       <div className="images">
