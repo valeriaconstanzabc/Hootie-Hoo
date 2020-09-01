@@ -3,18 +3,19 @@ import { images } from "./Images/index";
 
 class Images extends React.Component {
   characters = [];
+  vidas = 5;
   handleClick = (event) => {
     let character = event.target;
     if (character.getAttribute("check") === "found") {
       return;
     }
-
     if (character !== this.characters[0]) {
       this.switch(character);
       this.characters.push(character);
     } else {
       this.switch(character);
       this.characters = [];
+      
     }
 
     if (this.characters.length > 2) {
@@ -29,7 +30,7 @@ class Images extends React.Component {
       }
     }
     let allPictures = document.getElementsByClassName("image-blank");
-    if (allPictures.length < 1) {
+      if (allPictures.length < 1) {
       this.props.endGame(true);
       let reset = document.getElementsByClassName("image");
       for (let i = 0; i < reset.length; i++) {
@@ -45,7 +46,15 @@ class Images extends React.Component {
       character1.setAttribute("check", "found");
       character2.setAttribute("check", "found");
       return true;
+    }else {
+      this.vidas = this.vidas -1;
+      if (this.vidas === 0){
+          alert('GAME OVER');
+     
+      }
+    console.log(`Te quedan ${this.vidas} Vidas`);
     }
+    
     return false;
   };
 
@@ -53,7 +62,9 @@ class Images extends React.Component {
     if (target.getAttribute("check") === "true") {
       target.setAttribute("check", "false");
       target.classList.add("image-blank");
-    } else {
+    } 
+    
+     else {
       target.setAttribute("check", "true");
       target.classList.remove("image-blank");
     }
