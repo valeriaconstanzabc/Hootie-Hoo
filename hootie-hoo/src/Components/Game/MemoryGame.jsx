@@ -12,14 +12,12 @@ class MemoryGame extends React.Component {
     score: 0,
     };
 
-  handleLogin = (name, boolean) => {
-    this.setState({ name: name, showLogin: boolean });
-  };
-
   handleEndGame = (boolean) => {
     if (boolean) {
       this.setState({ showEndGame: boolean, score: this.state.score + 1 });
-    } 
+    } else {
+      this.setState({ showEndGame: boolean });
+    }
   };
 
   
