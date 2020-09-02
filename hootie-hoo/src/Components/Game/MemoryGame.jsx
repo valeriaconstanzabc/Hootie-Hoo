@@ -21,7 +21,7 @@ class MemoryGame extends React.Component {
 
   
   render() {
-    const { score, showEndGame, lives } = this.state;
+    const { score, showEndGame } = this.state;
     return (
 
       <div className="containerMemoryGames">
