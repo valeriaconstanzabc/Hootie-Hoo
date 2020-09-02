@@ -94,12 +94,12 @@ const Games = ({ Audio3, Audio4 }) => {
                         </div>
                         <div>
                             <p className="textGames">
-                                Sube de nivel y aumentarán los personajes, asi como los premios 
-                                que puedes ganar!
+                                Al avanzar y armar las parejas, ganarás medallas de reconocimiento y 
+                                podrás tener acceso a diferentes premios como: 
                                 <br/><br/>
-                                Imagenes de nuestros personajes del escuadrón 
-                                prevención y entretenidos cuentos para afianzar tus conocimientos 
-                                sobre como ganarle al virus y mantenerte sano y feliz. 
+                                Dibujos para colorear de nuestros personajes del escuadrón prevención y entretenidos 
+                                cuentos para afianzar tus conocimientos sobre como ganarle al virus y 
+                                mantenerte sano y feliz.
                             </p>
                         </div>
                     </div>
